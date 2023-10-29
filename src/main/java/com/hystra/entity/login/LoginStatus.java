@@ -17,6 +17,9 @@ public class LoginStatus {
     @Column(name="USERNAME")
     private String username;
 
+    @Column(name="POSITION_CODE")
+    private String POSITION_CODE;
+
     @Column(name="TYPE")
     private int type;
 
@@ -75,5 +78,13 @@ public class LoginStatus {
 
     public void setUpdateDate(Date updateDate) {
         this.updateDate = updateDate;
+    }
+
+    public String getPOSITION_CODE() {
+        return POSITION_CODE;
+    }
+
+    public void setPOSITION_CODE(String POSITION_CODE) {
+        this.POSITION_CODE = POSITION_CODE;
     }
 }

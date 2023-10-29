@@ -1,4 +1,3 @@
-com\hystra\dal\Dashboard.class
 com\hystra\entity\base\Registration.class
 com\hystra\dal\InfoActionPlanDAL.class
 com\hystra\dao\StaffDAO.class
@@ -13,6 +12,7 @@ com\hystra\SpringBootHelloWorldApplication.class
 com\hystra\dao\IStaffVerificationDAO.class
 com\hystra\dal\BarChartData.class
 com\hystra\dal\Response.class
+com\hystra\controllers\data\Dashboard.class
 com\hystra\utils\HibernateUtil.class
 com\hystra\utils\LogToFile.class
 com\hystra\entity\login\LoginStatus.class
@@ -20,6 +20,8 @@ com\hystra\dal\LineDataset.class
 com\hystra\dal\SPOProgress.class
 com\hystra\dal\SingleCard.class
 com\hystra\controllers\login\Login.class
+com\hystra\dal\DashboardNumbers.class
+com\hystra\dal\MIOReport.class
 com\hystra\controllers\LoginOnly.class
 com\hystra\entity\base\TrainingReport.class
 com\hystra\dal\DropDownResponse.class
@@ -35,11 +37,10 @@ com\hystra\entity\mapping\TrainingParticipantsMapping.class
 com\hystra\dal\ActualSaleData.class
 com\hystra\dal\ReportSerialization.class
 com\hystra\controllers\login\Codes.class
+com\hystra\dal\MonthlySalesReport.class
 com\hystra\dal\BasicData.class
-com\hystra\dal\ProductPerformance.class
-com\hystra\controllers\data\Test.class
+com\hystra\dal\GraphData.class
 com\hystra\dal\AddDeleteResponse.class
-com\hystra\dal\OrderSummary.class
 com\hystra\utils\Common.class
 com\hystra\dal\Dataset.class
 com\hystra\dal\CardDataYear.class

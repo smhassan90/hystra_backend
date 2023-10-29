@@ -18,8 +18,6 @@ public class User {
     @Column(name="PASSWORD")
     private String password;
 
-    @Column(name="USERTYPE")
-    private int userType;
 
     @Column(name="STATUS")
     private int status;
@@ -32,12 +30,6 @@ public class User {
 
     @Column(name="ROLE")
     private String role;
-
-    @Column(name="CITY")
-    private String city;
-
-    @Column(name="UPDATE_DATE")
-    private Date updateDate;
 
 
     public String getName() {
@@ -62,14 +54,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public int getUserType() {
-        return userType;
-    }
-
-    public void setUserType(int userType) {
-        this.userType = userType;
     }
 
     public int getStatus() {
@@ -104,19 +88,4 @@ public class User {
         this.role = role;
     }
 
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
-
-    public String getisty() {
-        return city;
-    }
-
-    public void setisty(String city) {
-        this.city = city;
-    }
 }

@@ -6,6 +6,7 @@ import com.hystra.utils.HibernateUtil;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,6 +26,7 @@ public class Login {
        This method will check the code validity and already logged in and then perform
        Login and generate token to further use for communication.
      */
+    @CrossOrigin(origins = "*" )
     @RequestMapping(value = "/login", method = RequestMethod.GET,params={"code","uniqueId","staffType"})
     @ResponseBody
     public String index(String code, String uniqueId, int staffType){

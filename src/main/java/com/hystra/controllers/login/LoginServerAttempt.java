@@ -41,9 +41,10 @@ public class LoginServerAttempt {
                 user = users.get(0);
                 loginStatus.setStatus(1);
                 loginStatus.setUsername(user.getUserName());
-                loginStatus.setType(user.getUserType());
+                loginStatus.setType(1);
                 String token = UUID.randomUUID().toString();
                 loginStatus.setToken(token);
+                loginStatus.setPOSITION_CODE("");
                 boolean isSuccessful = HibernateUtil.saveOrUpdate(loginStatus);
                 if(isSuccessful){
                     loginResponse.setToken(token);

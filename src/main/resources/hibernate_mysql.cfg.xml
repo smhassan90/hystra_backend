@@ -18,8 +18,7 @@
         <!-- Assume test is the database name -->
 
         <property name = "hibernate.connection.url">
-            jdbc:mysql://localhost:3306/tis_db
-            <!--jdbc:mysql://192.168.0.51:3306/tis_db-->
+            jdbc:mysql://192.168.0.51:3306/dbfynuls
         </property>
 
         <property name = "hibernate.connection.username">
@@ -29,7 +28,7 @@
         <property name = "hibernate.connection.password">
             password123
         </property>
-        <property name="hibernate.connection.default_schema">tis_db</property>
+        <property name="hibernate.connection.default_schema">dbfynuls</property>
         <!-- Shows SQL instructions in shell when you run your program and do any CRUD operation into the DB -->
         <property name="show_sql">true</property>
         <!-- Updates DB schema on startup -->
